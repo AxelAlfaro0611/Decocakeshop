@@ -1,0 +1,34 @@
+.site-footer {
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--maroon) 92%, black));
+  color: #ffe9ef;
+  padding: 2.5rem 0 2rem;
+}
+
+.site-footer__inner {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.site-footer__logo {
+  display: block;
+  width: 7.5rem;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.site-footer a {
+  color: var(--pink);
+}
+
+.site-footer__admin {
+  margin-top: 0.9rem !important;
+  opacity: 0.9;
+}

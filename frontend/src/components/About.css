@@ -1,0 +1,139 @@
+.about {
+  padding: 2rem 0 5rem;
+}
+
+.about__inner {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  border-radius: 1.75rem;
+  background:
+    radial-gradient(circle at 94% 6%, rgba(29, 127, 141, 0.16), transparent 30%),
+    linear-gradient(140deg, color-mix(in srgb, var(--pink) 58%, #fff), #fff 60%);
+  border: 1px solid color-mix(in srgb, var(--turquoise) 22%, transparent);
+  box-shadow: 0 24px 60px rgba(124, 33, 27, 0.08);
+}
+
+.about__header {
+  max-width: 780px;
+}
+
+.about__eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: var(--fuchsia);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.about__header h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.08;
+  color: var(--maroon);
+}
+
+.about__intro {
+  margin: 1rem 0 0;
+  max-width: 68ch;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--maroon) 78%, #222);
+}
+
+.about__story {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  margin-top: 2.2rem;
+  padding-top: 2rem;
+  border-top: 1px solid color-mix(in srgb, var(--maroon) 14%, transparent);
+}
+
+.about__story p {
+  margin: 0;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--maroon) 72%, #333);
+}
+
+.about__pillars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.about__card {
+  position: relative;
+  min-height: 100%;
+  padding: 1.6rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--turquoise) 20%, transparent);
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.about__number {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  color: color-mix(in srgb, var(--turquoise) 13%, transparent);
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about__card h3 {
+  position: relative;
+  margin: 0;
+  color: var(--turquoise);
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+}
+
+.about__card p {
+  position: relative;
+  margin: 0.75rem 0 0;
+  max-width: 55ch;
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--maroon) 72%, #333);
+}
+
+.about__motto {
+  margin: 2.5rem 0 0;
+  padding: 1.25rem 1rem;
+  border: 0;
+  border-radius: 1rem;
+  background: var(--maroon);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 3vw, 1.65rem);
+  line-height: 1.35;
+  text-align: center;
+}
+
+.about__follow {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.about__follow p {
+  margin: 0 0 0.15rem;
+  color: color-mix(in srgb, var(--maroon) 70%, #333);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .about__story {
+    grid-template-columns: 1fr;
+  }
+
+  .about__pillars {
+    grid-template-columns: 1fr;
+  }
+}

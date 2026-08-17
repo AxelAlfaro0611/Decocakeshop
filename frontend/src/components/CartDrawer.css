@@ -1,0 +1,174 @@
+.cart-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(50, 12, 18, 0.42);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+  z-index: 50;
+}
+
+.cart-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 60;
+  width: min(100%, 400px);
+  height: 100%;
+  background: linear-gradient(180deg, #fff8fa 0%, #ffe8ef 100%);
+  border-left: 1px solid color-mix(in srgb, var(--maroon) 12%, transparent);
+  transform: translateX(105%);
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1rem 1.25rem;
+}
+
+.cart-drawer.is-open {
+  transform: translateX(0);
+}
+
+.cart-drawer__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-drawer__head h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  color: var(--maroon);
+  font-size: 1.55rem;
+}
+
+.cart-drawer__close {
+  border: 0;
+  background: transparent;
+  color: var(--turquoise);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-drawer__empty {
+  color: color-mix(in srgb, var(--maroon) 75%, #333);
+  line-height: 1.5;
+}
+
+.cart-drawer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  flex: 1;
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.cart-line {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.85rem;
+  border-radius: 0.9rem;
+  background: color-mix(in srgb, #fff 75%, var(--pink));
+  border: 1px solid color-mix(in srgb, var(--maroon) 10%, transparent);
+}
+
+.cart-line__name {
+  margin: 0;
+  font-weight: 600;
+  color: var(--maroon);
+}
+
+.cart-line__price {
+  margin: 0.2rem 0 0;
+  color: var(--fuchsia);
+  font-weight: 600;
+}
+
+.cart-line__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cart-line__controls input {
+  width: 4.2rem;
+  border-radius: 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--maroon) 18%, transparent);
+  padding: 0.35rem 0.45rem;
+  font: inherit;
+}
+
+.cart-line__controls button {
+  border: 0;
+  background: transparent;
+  color: var(--maroon);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cart-drawer__footer {
+  display: grid;
+  gap: 0.65rem;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--maroon) 12%, transparent);
+}
+
+.cart-drawer__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--maroon);
+}
+
+.cart-drawer__total strong {
+  font-size: 1.2rem;
+  color: var(--fuchsia);
+}
+
+.cart-drawer__hint {
+  margin: 0;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--maroon) 72%, #444);
+}
+
+.cart-drawer__footer .btn--whatsapp {
+  font-size: 1.02rem;
+  padding: 0.85rem 1rem;
+  line-height: 1.25;
+}
+
+.btn--block {
+  width: 100%;
+  text-align: center;
+}
+
+.btn.is-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.btn--ghost-dark {
+  border: 0;
+  background: transparent;
+  color: var(--maroon);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.45rem;
+}
