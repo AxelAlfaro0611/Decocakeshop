@@ -1,0 +1,19 @@
+El SECRET_KEY: vKCXd8LooVIY7B0lHAKu98OyjPd6c7-2IzfQL53PviUj0EkVuh07Gyvhsms7ftMAzJI
+
+Proyecto
+/var/www/decocakeshop/
+
+Backend .env
+/var/www/decocakeshop/backend/.env → ahí está el SECRET_KEY
+
+Frontend .env
+/var/www/decocakeshop/frontend/.env
+
+Servicio Django
+decocakeshop (Gunicorn puerto 8004)
+
+Apache sitio
+/etc/apache2/sites-available/decocakeshop.usercodex.com.conf
+
+Base de datos actual
+SQLite (USE_SQLITE=True) en el backend
