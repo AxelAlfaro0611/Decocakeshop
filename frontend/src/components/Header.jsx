@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpeg'
+import logo from '../assets/logo.png'
 import { useCart } from '../context/CartContext'
 import SocialLinks from './SocialLinks'
 import './Header.css'

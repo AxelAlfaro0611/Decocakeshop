@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import logo from '../assets/logo.jpeg'
+import logo from '../assets/logo.png'
 import { fetchProducts } from '../api/client'
 import SocialLinks from './SocialLinks'
 import './Hero.css'

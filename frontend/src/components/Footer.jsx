@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpeg'
+import logo from '../assets/logo.png'
 import SocialLinks from './SocialLinks'
 import './Footer.css'
 import './SocialLinks.css'
