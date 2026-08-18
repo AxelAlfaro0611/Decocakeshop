@@ -19,6 +19,26 @@ export default function ProductGrid() {
   }, [])
 
   useEffect(() => {
+    function onFocus(event) {
+      const nextCategory = event.detail?.category || ''
+      const slug = event.detail?.slug
+      setCategory(nextCategory)
+      window.setTimeout(() => {
+        document.getElementById('catalogo')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        if (!slug) return
+        window.setTimeout(() => {
+          document
+            .getElementById(`producto-${slug}`)
+            ?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }, 280)
+      }, 40)
+    }
+
+    window.addEventListener('catalog:focus', onFocus)
+    return () => window.removeEventListener('catalog:focus', onFocus)
+  }, [])
+
+  useEffect(() => {
     let cancelled = false
     setLoading(true)
     setError('')

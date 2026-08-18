@@ -1,7 +1,21 @@
 .site-footer {
-  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--maroon) 92%, black));
-  color: #ffe9ef;
-  padding: 2.5rem 0 2rem;
+  position: relative;
+  margin-top: 1.5rem;
+  background: linear-gradient(180deg, #ffe4ee 0%, #f7b3c8 55%, #f09bb8 100%);
+  color: #7a3d52;
+  padding: 2.85rem 0 2rem;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: radial-gradient(circle at 14px 14px, #ffe4ee 12px, transparent 13px);
+  background-size: 28px 28px;
+  background-repeat: repeat-x;
 }
 
 .site-footer__inner {
@@ -15,7 +29,6 @@
   display: block;
   width: 7.5rem;
   height: auto;
-  border-radius: 0.75rem;
   margin-bottom: 0.35rem;
 }
 
@@ -25,7 +38,7 @@
 }
 
 .site-footer a {
-  color: var(--pink);
+  color: #9a3d62;
 }
 
 .site-footer__admin {

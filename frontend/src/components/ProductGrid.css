@@ -1,7 +1,7 @@
 .catalog {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 4rem 0 3rem;
+  padding: 4rem 0 5.5rem;
 }
 
 .catalog__intro h2 {
@@ -29,6 +29,21 @@
   gap: 0.55rem;
 }
 
+@media (max-width: 480px) {
+  .catalog {
+    width: min(1120px, calc(100% - 1.15rem));
+    padding: 2.5rem 0 5rem;
+  }
+
+  .catalog__search {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog__search .btn {
+    width: 100%;
+  }
+}
+
 .catalog__search input {
   width: 100%;
   border: 1px solid color-mix(in srgb, var(--maroon) 18%, transparent);
@@ -40,7 +55,7 @@
 }
 
 .catalog__search input:focus {
-  outline: 2px solid color-mix(in srgb, var(--turquoise) 55%, transparent);
+  outline: 2px solid color-mix(in srgb, var(--fuchsia) 55%, transparent);
   outline-offset: 1px;
 }
 
@@ -51,9 +66,9 @@
 }
 
 .catalog__filters button {
-  border: 1px solid color-mix(in srgb, var(--turquoise) 35%, transparent);
-  background: transparent;
-  color: var(--turquoise);
+  border: 1px solid color-mix(in srgb, var(--fuchsia) 40%, transparent);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--maroon);
   border-radius: 999px;
   padding: 0.45rem 0.9rem;
   font: inherit;
@@ -65,8 +80,9 @@
 
 .catalog__filters button.is-active,
 .catalog__filters button:hover {
-  background: var(--turquoise);
+  background: var(--fuchsia);
   color: #fff;
+  border-color: var(--fuchsia);
 }
 
 .catalog__grid {

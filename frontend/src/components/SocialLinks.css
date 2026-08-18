@@ -38,15 +38,15 @@
   height: 2.15rem;
   justify-content: center;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--maroon) 10%, transparent);
-  color: var(--maroon);
-  border: 1px solid color-mix(in srgb, var(--maroon) 14%, transparent);
+  background: #fff;
+  color: var(--fuchsia);
+  border: 1px solid color-mix(in srgb, var(--fuchsia) 28%, transparent);
 }
 
 .social-links--header a:hover {
-  background: var(--maroon);
+  background: var(--fuchsia);
   color: #fff;
-  border-color: var(--maroon);
+  border-color: var(--fuchsia);
 }
 
 /* Hero: destacadas al entrar */
@@ -58,15 +58,15 @@
 .social-links--hero a {
   padding: 0.55rem 0.95rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid color-mix(in srgb, var(--fuchsia) 35%, #fff);
+  color: var(--maroon);
   font-size: 0.9rem;
   backdrop-filter: blur(8px);
 }
 
 .social-links--hero a:hover {
-  background: rgba(255, 255, 255, 0.28);
+  background: #fff;
 }
 
 /* About / Nosotros */
@@ -80,14 +80,14 @@
   padding: 0.6rem 1rem;
   border-radius: 999px;
   background: #fff;
-  border: 1px solid color-mix(in srgb, var(--turquoise) 28%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fuchsia) 28%, transparent);
   color: var(--maroon);
   font-size: 0.92rem;
 }
 
 .social-links--about a:hover {
-  background: var(--turquoise);
-  border-color: var(--turquoise);
+  background: var(--fuchsia);
+  border-color: var(--fuchsia);
   color: #fff;
 }
 
@@ -100,15 +100,15 @@
 .social-links--footer a {
   padding: 0.55rem 0.9rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 233, 239, 0.22);
-  color: #ffe9ef;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: #7a3d52;
   font-size: 0.9rem;
 }
 
 .social-links--footer a:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(248, 194, 207, 0.55);
+  background: #fff;
+  border-color: #fff;
 }
 
 @media (max-width: 420px) {

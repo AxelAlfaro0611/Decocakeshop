@@ -11,7 +11,7 @@ export default function ProductCard({ product }) {
   const image = product.image_url || product.image
 
   return (
-    <article className="product">
+    <article className="product" id={`producto-${product.slug}`}>
       <div className="product__media">
         {image ? (
           <img src={image} alt={product.name} loading="lazy" />

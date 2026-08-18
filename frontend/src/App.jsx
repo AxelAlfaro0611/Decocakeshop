@@ -4,6 +4,7 @@ import ProductGrid from './components/ProductGrid'
 import About from './components/About'
 import Footer from './components/Footer'
 import CartDrawer from './components/CartDrawer'
+import WhatsAppFloat from './components/WhatsAppFloat'
 import { CartProvider } from './context/CartContext'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         </main>
         <Footer />
         <CartDrawer />
+        <WhatsAppFloat />
       </div>
     </CartProvider>
   )

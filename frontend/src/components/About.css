@@ -8,10 +8,11 @@
   padding: clamp(1.5rem, 5vw, 4rem);
   border-radius: 1.75rem;
   background:
-    radial-gradient(circle at 94% 6%, rgba(29, 127, 141, 0.16), transparent 30%),
-    linear-gradient(140deg, color-mix(in srgb, var(--pink) 58%, #fff), #fff 60%);
-  border: 1px solid color-mix(in srgb, var(--turquoise) 22%, transparent);
-  box-shadow: 0 24px 60px rgba(124, 33, 27, 0.08);
+    radial-gradient(circle at 94% 6%, rgba(255, 176, 128, 0.35), transparent 32%),
+    radial-gradient(circle at 8% 88%, rgba(238, 122, 168, 0.18), transparent 28%),
+    linear-gradient(140deg, color-mix(in srgb, var(--pink) 72%, #fff), #fff 62%);
+  border: 1px solid color-mix(in srgb, var(--fuchsia) 22%, transparent);
+  box-shadow: 0 24px 60px rgba(238, 122, 168, 0.16);
 }
 
 .about__header {
@@ -71,7 +72,7 @@
   min-height: 100%;
   padding: 1.6rem;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--turquoise) 20%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fuchsia) 18%, transparent);
   border-radius: 1.2rem;
   background: rgba(255, 255, 255, 0.72);
 }
@@ -80,7 +81,7 @@
   position: absolute;
   top: 0.5rem;
   right: 1rem;
-  color: color-mix(in srgb, var(--turquoise) 13%, transparent);
+  color: color-mix(in srgb, var(--fuchsia) 18%, transparent);
   font-family: var(--font-display);
   font-size: 4.5rem;
   font-weight: 700;
@@ -90,7 +91,7 @@
 .about__card h3 {
   position: relative;
   margin: 0;
-  color: var(--turquoise);
+  color: var(--fuchsia);
   font-family: var(--font-display);
   font-size: 1.55rem;
 }
@@ -108,8 +109,8 @@
   padding: 1.25rem 1rem;
   border: 0;
   border-radius: 1rem;
-  background: var(--maroon);
-  color: #fff;
+  background: linear-gradient(135deg, #f7a8c4, #ffc4a8);
+  color: #7a3d52;
   font-family: var(--font-display);
   font-size: clamp(1.15rem, 3vw, 1.65rem);
   line-height: 1.35;
